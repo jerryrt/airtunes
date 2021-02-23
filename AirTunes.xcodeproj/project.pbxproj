@@ -62,7 +62,6 @@
 		840D20BE1E53C3720077C001 /* String+Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Match.swift"; sourceTree = "<group>"; };
 		840D20BF1E53C3720077C001 /* TrackInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackInfo.swift; sourceTree = "<group>"; };
 		840D20C01E53C3720077C001 /* TypeRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeRegistry.swift; sourceTree = "<group>"; };
-		840D20D81E53C3BD0077C001 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		840D20DA1E53C3EC0077C001 /* AirTunes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AirTunes.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8489E7111E52B7E900DFDC64 /* AirTunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirTunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8489E7141E52B7E900DFDC64 /* AirTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AirTunes.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -105,14 +104,6 @@
 				840D20BF1E53C3720077C001 /* TrackInfo.swift */,
 			);
 			path = Private;
-			sourceTree = "<group>";
-		};
-		840D20D71E53C3BD0077C001 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				840D20D81E53C3BD0077C001 /* module.modulemap */,
-			);
-			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
 		840D20D91E53C3EC0077C001 /* Public */ = {
@@ -193,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				840D20DC1E53C41C0077C001 /* CocoaAsyncSocket */,
-				840D20D71E53C3BD0077C001 /* CommonCrypto */,
 				840D20AA1E53C3720077C001 /* Private */,
 				840D20D91E53C3EC0077C001 /* Public */,
 				8489E7141E52B7E900DFDC64 /* AirTunes.h */,
@@ -266,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8489E7071E52B7E900DFDC64;
@@ -441,7 +432,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -464,7 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
