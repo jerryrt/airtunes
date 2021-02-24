@@ -12,7 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#if os(OSX)
 import Cocoa
+#elseif os(iOS)
+import UIKit
+#endif
 
 class RTSPSession: NSObject, GCDAsyncSocketDelegate {
     private let manager: SessionManager
@@ -178,7 +182,11 @@ class RTSPSession: NSObject, GCDAsyncSocketDelegate {
     }
 
     private func handleJPEGData(_ data: Data) {
+        #if os(OSX)
         let artwork = NSImage(data: data) ?? NSImage()
+        #elseif os(iOS)
+        let artwork = UIImage(data: data) ?? UIImage()
+        #endif
         let parsed = ["artwork": artwork]
         manager.updateTrackInfo(withKeyedValues: parsed)
     }

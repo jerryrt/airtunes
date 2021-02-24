@@ -12,8 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#if os(OSX)
 import Cocoa
 import ABPlayerInterface
+#elseif os(iOS)
+import UIKit
+import ABPlayerInterface_iOS
+#endif
 
 class TrackInfo: NSObject, ABTrackInfo {
     dynamic var name = ""
@@ -21,7 +26,12 @@ class TrackInfo: NSObject, ABTrackInfo {
     dynamic var artist = ""
     dynamic var position = -1.0
     dynamic var duration = -1.0
+  
+    #if os(OSX)
     dynamic var artwork = NSImage()
+    #elseif os(iOS)
+    dynamic var artwork = UIImage()
+    #endif
 
     func reset() {
         name = ""
@@ -29,7 +39,11 @@ class TrackInfo: NSObject, ABTrackInfo {
         artist = ""
         position = -1.0
         duration = -1.0
+        #if os(OSX)
         artwork = NSImage()
+        #elseif os(iOS)
+        artwork = UIImage()
+        #endif
     }
 
     func update(withKeyedValues keyedValues: [String: AnyHashable]) {

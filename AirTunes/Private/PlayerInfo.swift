@@ -13,7 +13,11 @@
 // limitations under the License.
 
 import Foundation
+#if os(OSX)
 import ABPlayerInterface
+#elseif os(iOS)
+import ABPlayerInterface_iOS
+#endif
 
 class PlayerInfo: NSObject, ABPlayerInfo {
     dynamic var isPlaying = false

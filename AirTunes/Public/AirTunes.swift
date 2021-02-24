@@ -13,7 +13,11 @@
 // limitations under the License.
 
 import Foundation
+#if os(OSX)
 import ABPlayerInterface
+#elseif os(iOS)
+import ABPlayerInterface_iOS
+#endif
 
 /// The `AirTunes` class creates a server that AirPlay clients may connect and
 /// stream audio to.

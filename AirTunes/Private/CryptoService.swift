@@ -42,6 +42,7 @@ class CryptoService {
     }
 
     private func transform(_ input: Data, type: SecTransformType) -> Data {
+        #if os(OSX)
         let parameters: [NSString: AnyObject] = [
             kSecAttrKeyType: kSecAttrKeyTypeRSA,
             kSecAttrKeyClass: kSecAttrKeyClassPrivate
@@ -62,5 +63,9 @@ class CryptoService {
         SecTransformSetAttribute(
             transform, kSecTransformInputAttributeName, input as CFTypeRef, nil)
         return SecTransformExecute(transform, nil) as! Data
+        #elseif os(iOS)
+        return Data()//TODO
+        #endif
+        
     }
 }

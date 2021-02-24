@@ -37,6 +37,39 @@
 		84C2B2D71E5817630039EC0C /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C2B2D31E5817630039EC0C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84C2B2D81E5817630039EC0C /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2B2D41E5817630039EC0C /* GCDAsyncSocket.m */; };
 		84C2B2D91E5817630039EC0C /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C2B2D51E5817630039EC0C /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC245A125E5734000D3F283 /* AirTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20DA1E53C3EC0077C001 /* AirTunes.swift */; };
+		DFC245A225E5734000D3F283 /* GCDAsyncSocket+InternetAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BD1E53C3720077C001 /* GCDAsyncSocket+InternetAddress.swift */; };
+		DFC245A325E5734000D3F283 /* RTSPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B81E53C3720077C001 /* RTSPParser.swift */; };
+		DFC245A425E5734000D3F283 /* DecryptedPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B01E53C3720077C001 /* DecryptedPacket.swift */; };
+		DFC245A525E5734000D3F283 /* BonjourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20AD1E53C3720077C001 /* BonjourService.swift */; };
+		DFC245A625E5734000D3F283 /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20AC1E53C3720077C001 /* AudioSession.swift */; };
+		DFC245A725E5734000D3F283 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2B2D21E5817630039EC0C /* GCDAsyncUdpSocket.m */; };
+		DFC245A825E5734000D3F283 /* RTSPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B91E53C3720077C001 /* RTSPResponse.swift */; };
+		DFC245A925E5734000D3F283 /* RTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B71E53C3720077C001 /* RTPSession.swift */; };
+		DFC245AA25E5734000D3F283 /* String+Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BE1E53C3720077C001 /* String+Match.swift */; };
+		DFC245AB25E5734000D3F283 /* TypeRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20C01E53C3720077C001 /* TypeRegistry.swift */; };
+		DFC245AC25E5734000D3F283 /* PlayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B41E53C3720077C001 /* PlayerInfo.swift */; };
+		DFC245AD25E5734000D3F283 /* TrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BF1E53C3720077C001 /* TrackInfo.swift */; };
+		DFC245AE25E5734000D3F283 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2B2D41E5817630039EC0C /* GCDAsyncSocket.m */; };
+		DFC245AF25E5734000D3F283 /* RTPPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B61E53C3720077C001 /* RTPPacket.swift */; };
+		DFC245B025E5734000D3F283 /* SDPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BB1E53C3720077C001 /* SDPParser.swift */; };
+		DFC245B125E5734000D3F283 /* ParameterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B21E53C3720077C001 /* ParameterParser.swift */; };
+		DFC245B225E5734000D3F283 /* AudioPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20AB1E53C3720077C001 /* AudioPacket.swift */; };
+		DFC245B325E5734000D3F283 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B31E53C3720077C001 /* Parser.swift */; };
+		DFC245B425E5734000D3F283 /* RTSPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BA1E53C3720077C001 /* RTSPSession.swift */; };
+		DFC245B525E5734000D3F283 /* EmptyPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B11E53C3720077C001 /* EmptyPacket.swift */; };
+		DFC245B625E5734000D3F283 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20B51E53C3720077C001 /* RemoteService.swift */; };
+		DFC245B725E5734000D3F283 /* DAAPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20AF1E53C3720077C001 /* DAAPParser.swift */; };
+		DFC245B825E5734000D3F283 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20AE1E53C3720077C001 /* CryptoService.swift */; };
+		DFC245B925E5734000D3F283 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D20BC1E53C3720077C001 /* SessionManager.swift */; };
+		DFC245BE25E5734000D3F283 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C2B2D31E5817630039EC0C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC245BF25E5734000D3F283 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C2B2D51E5817630039EC0C /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC245C125E5734000D3F283 /* PrivateKey.pem in Resources */ = {isa = PBXBuildFile; fileRef = 8489E7351E52B85600DFDC64 /* PrivateKey.pem */; };
+		DFC245D225E573C900D3F283 /* ABPlayerInterface_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC245D125E573C900D3F283 /* ABPlayerInterface_iOS.framework */; };
+		DFC245EF25E5799200D3F283 /* Info_iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFC245EE25E5799200D3F283 /* Info_iOS.plist */; };
+		DFC2460625E57E8700D3F283 /* AirTunes_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC2460525E57E8700D3F283 /* AirTunes_iOS.h */; };
+		DFC2461925E583DC00D3F283 /* AirTunes_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC2460525E57E8700D3F283 /* AirTunes_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC2467925E6037C00D3F283 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC2467825E6037C00D3F283 /* SwiftyRSA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +100,6 @@
 		8489E7141E52B7E900DFDC64 /* AirTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AirTunes.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8489E7151E52B7E900DFDC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8489E7351E52B85600DFDC64 /* PrivateKey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrivateKey.pem; sourceTree = "<group>"; };
-		8489E7781E52BD6A00DFDC64 /* ABProtocols.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ABProtocols.framework; path = "../../Library/Developer/Xcode/DerivedData/AirBass-copfgxgldfplacgypfcteepohutk/Build/Products/Debug/ABProtocols.framework"; sourceTree = "<group>"; };
 		8489E7EA1E53A35D00DFDC64 /* ABPlayerInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ABPlayerInterface.framework; path = ../workspace/ABPlayerInterface/build/Debug/ABPlayerInterface.framework; sourceTree = "<group>"; };
 		84C2B2D21E5817630039EC0C /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		84C2B2D31E5817630039EC0C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
@@ -75,6 +107,11 @@
 		84C2B2D51E5817630039EC0C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		84C2B2FB1E5AC02B0039EC0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84C2B2FC1E5AC02B0039EC0C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DFC245C525E5734000D3F283 /* AirTunes_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirTunes_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC245D125E573C900D3F283 /* ABPlayerInterface_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABPlayerInterface_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC245EE25E5799200D3F283 /* Info_iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_iOS.plist; sourceTree = "<group>"; };
+		DFC2460525E57E8700D3F283 /* AirTunes_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTunes_iOS.h; sourceTree = "<group>"; };
+		DFC2467825E6037C00D3F283 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +120,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8489E7EB1E53A35D00DFDC64 /* ABPlayerInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC245BA25E5734000D3F283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC245D225E573C900D3F283 /* ABPlayerInterface_iOS.framework in Frameworks */,
+				DFC2467925E6037C00D3F283 /* SwiftyRSA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8489E7111E52B7E900DFDC64 /* AirTunes.framework */,
+				DFC245C525E5734000D3F283 /* AirTunes_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +234,9 @@
 				840D20AA1E53C3720077C001 /* Private */,
 				840D20D91E53C3EC0077C001 /* Public */,
 				8489E7141E52B7E900DFDC64 /* AirTunes.h */,
+				DFC2460525E57E8700D3F283 /* AirTunes_iOS.h */,
 				8489E7151E52B7E900DFDC64 /* Info.plist */,
+				DFC245EE25E5799200D3F283 /* Info_iOS.plist */,
 				8489E7351E52B85600DFDC64 /* PrivateKey.pem */,
 			);
 			path = AirTunes;
@@ -196,8 +245,9 @@
 		8489E7771E52BD6A00DFDC64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFC2467825E6037C00D3F283 /* SwiftyRSA.framework */,
+				DFC245D125E573C900D3F283 /* ABPlayerInterface_iOS.framework */,
 				8489E7EA1E53A35D00DFDC64 /* ABPlayerInterface.framework */,
-				8489E7781E52BD6A00DFDC64 /* ABProtocols.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,8 +260,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8489E7161E52B7E900DFDC64 /* AirTunes.h in Headers */,
+				DFC2460625E57E8700D3F283 /* AirTunes_iOS.h in Headers */,
 				84C2B2D71E5817630039EC0C /* GCDAsyncUdpSocket.h in Headers */,
 				84C2B2D91E5817630039EC0C /* GCDAsyncSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC245BC25E5734000D3F283 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC2461925E583DC00D3F283 /* AirTunes_iOS.h in Headers */,
+				DFC245BE25E5734000D3F283 /* GCDAsyncUdpSocket.h in Headers */,
+				DFC245BF25E5734000D3F283 /* GCDAsyncSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +295,24 @@
 			name = AirTunes;
 			productName = AirTunes;
 			productReference = 8489E7111E52B7E900DFDC64 /* AirTunes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFC2459F25E5734000D3F283 /* AirTunes_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC245C225E5734000D3F283 /* Build configuration list for PBXNativeTarget "AirTunes_iOS" */;
+			buildPhases = (
+				DFC245A025E5734000D3F283 /* Sources */,
+				DFC245BA25E5734000D3F283 /* Frameworks */,
+				DFC245BC25E5734000D3F283 /* Headers */,
+				DFC245C025E5734000D3F283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTunes_iOS;
+			productName = AirTunes;
+			productReference = DFC245C525E5734000D3F283 /* AirTunes_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,6 +344,7 @@
 			projectRoot = "";
 			targets = (
 				8489E7101E52B7E900DFDC64 /* AirTunes */,
+				DFC2459F25E5734000D3F283 /* AirTunes_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +354,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC245EF25E5799200D3F283 /* Info_iOS.plist in Resources */,
 				8489E7531E52B85600DFDC64 /* PrivateKey.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC245C025E5734000D3F283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC245C125E5734000D3F283 /* PrivateKey.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +402,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFC245A025E5734000D3F283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC245A125E5734000D3F283 /* AirTunes.swift in Sources */,
+				DFC245A225E5734000D3F283 /* GCDAsyncSocket+InternetAddress.swift in Sources */,
+				DFC245A325E5734000D3F283 /* RTSPParser.swift in Sources */,
+				DFC245A425E5734000D3F283 /* DecryptedPacket.swift in Sources */,
+				DFC245A525E5734000D3F283 /* BonjourService.swift in Sources */,
+				DFC245A625E5734000D3F283 /* AudioSession.swift in Sources */,
+				DFC245A725E5734000D3F283 /* GCDAsyncUdpSocket.m in Sources */,
+				DFC245A825E5734000D3F283 /* RTSPResponse.swift in Sources */,
+				DFC245A925E5734000D3F283 /* RTPSession.swift in Sources */,
+				DFC245AA25E5734000D3F283 /* String+Match.swift in Sources */,
+				DFC245AB25E5734000D3F283 /* TypeRegistry.swift in Sources */,
+				DFC245AC25E5734000D3F283 /* PlayerInfo.swift in Sources */,
+				DFC245AD25E5734000D3F283 /* TrackInfo.swift in Sources */,
+				DFC245AE25E5734000D3F283 /* GCDAsyncSocket.m in Sources */,
+				DFC245AF25E5734000D3F283 /* RTPPacket.swift in Sources */,
+				DFC245B025E5734000D3F283 /* SDPParser.swift in Sources */,
+				DFC245B125E5734000D3F283 /* ParameterParser.swift in Sources */,
+				DFC245B225E5734000D3F283 /* AudioPacket.swift in Sources */,
+				DFC245B325E5734000D3F283 /* Parser.swift in Sources */,
+				DFC245B425E5734000D3F283 /* RTSPSession.swift in Sources */,
+				DFC245B525E5734000D3F283 /* EmptyPacket.swift in Sources */,
+				DFC245B625E5734000D3F283 /* RemoteService.swift in Sources */,
+				DFC245B725E5734000D3F283 /* DAAPParser.swift in Sources */,
+				DFC245B825E5734000D3F283 /* CryptoService.swift in Sources */,
+				DFC245B925E5734000D3F283 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -341,6 +462,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,10 +479,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -393,6 +514,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "/tmp/$(PRODUCT_NAME).dst";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -403,9 +525,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -426,9 +547,10 @@
 				INFOPLIST_FILE = AirTunes/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenghis.airtunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -450,12 +572,66 @@
 				INFOPLIST_FILE = AirTunes/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenghis.airtunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DFC245C325E5734000D3F283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AirTunes/Info_iOS.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jenghis.airtunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFC245C425E5734000D3F283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AirTunes/Info_iOS.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jenghis.airtunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$SRCROOT/AirTunes/**";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -476,6 +652,15 @@
 			buildConfigurations = (
 				8489E71A1E52B7E900DFDC64 /* Debug */,
 				8489E71B1E52B7E900DFDC64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC245C225E5734000D3F283 /* Build configuration list for PBXNativeTarget "AirTunes_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC245C325E5734000D3F283 /* Debug */,
+				DFC245C425E5734000D3F283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

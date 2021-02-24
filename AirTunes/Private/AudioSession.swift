@@ -15,21 +15,28 @@
 import Foundation
 import AudioToolbox
 
+func _kAudioQueueOutputCallback(clientData: UnsafeMutableRawPointer?, AQ: AudioQueueRef, buffer: AudioQueueBufferRef) {
+  let sess = Unmanaged<AudioSession>.fromOpaque(clientData!).takeUnretainedValue()
+  sess.queueCallback(queue:AQ, buffer:buffer)
+}
+
 class AudioSession {
     private var callbackQueue = DispatchQueue(label: "CallbackQueue")
     private var playerState = PlayerState()
     private let manager: SessionManager
+  
+    func queueCallback(queue: AudioQueueRef, buffer: AudioQueueBufferRef) {
+        self.handleOutputBuffer(playerState: self.playerState,
+                                queue: queue,
+                                buffer: buffer)
+    }
 
     init(manager: SessionManager) {
         self.manager = manager
     }
 
     func start() {
-        createAudioQueue(
-            for: playerState, callbackQueue: callbackQueue) { (queue, buffer) in
-                self.handleOutputBuffer(playerState: self.playerState,
-                                        queue: queue,
-                                        buffer: buffer)}
+        createAudioQueue(for: playerState, callbackQueue: callbackQueue, callback: queueCallback)
         setMagicCookie(for: playerState.queue)
         createAudioBuffers(for: playerState.queue,
                            count: playerState.bufferCount)
@@ -75,8 +82,18 @@ class AudioSession {
                                   callback: @escaping AudioQueueCallback) {
         var format = createFormat()
         var queue: AudioQueueRef? = nil
-        AudioQueueNewOutputWithDispatchQueue(
-            &queue, &format, 0, callbackQueue, callback)
+        if #available(iOS 10.0, *) {
+            // modern code
+            AudioQueueNewOutputWithDispatchQueue(
+                &queue, &format, 0, callbackQueue, callback)
+        } else {
+            // Fallback on earlier versions
+            let selfPointer = unsafeBitCast(self, to: UnsafeMutableRawPointer.self)
+            let status = AudioQueueNewOutput(&format, _kAudioQueueOutputCallback, selfPointer, RunLoop.main.getCFRunLoop(), (CFRunLoopMode.commonModes as! CFString), 0, &queue)
+            #if DEBUG
+            print("legacy audio queue creation, status: \(status)")
+            #endif
+        }
         playerState.queue = queue
     }
 
